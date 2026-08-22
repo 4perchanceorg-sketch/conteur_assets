@@ -1,0 +1,29 @@
+      <button id="loreCardsToggleBtn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:6px; text-align:left; font-size:80%; padding:4px 8px; border:1px solid var(--box-border-color,#888); border-radius:3px; background:var(--box-color); cursor:pointer;"
+        onclick="var ctn=document.getElementById('loreCardsCtn'); var open=ctn.style.display!=='none'; ctn.style.display=open?'none':'block'; try{localStorage.loreCardsPanelOpen=open?'':'1';}catch(e){} var _lbl=document.getElementById('loreCardsToggleLabel'); if(_lbl) _lbl.textContent=open?'🃏 Lore Cards ▶':'🃏 Lore Cards ▼'; if(!open && window._loreRefreshPanel) window._loreRefreshPanel();"
+        data-tooltip="Cards for people, places or things — a card is sent to the AI when its name or an alias is mentioned, or when frozen 📌. Fields come from a template you choose."><span id="loreCardsToggleLabel">🃏 Lore Cards ▶</span><span id="loreCardsToggleTokens" style="opacity:0.65; font-weight:normal; flex-shrink:0;"></span></button>
+      <div id="loreCardsCtn" style="display:none; padding:8px; border:1px solid var(--box-border-color,#888); border-top:none; border-radius:0 0 3px 3px; background:var(--box-color);">
+        <label style="display:flex; align-items:center; gap:4px; font-size:0.7rem; margin-bottom:0.4rem; cursor:pointer;" data-tooltip="Turn the LoreCards provider off — no card is sent to the AI (kill-switch, per-browser)">
+          <input id="loreCardsOffChk" type="checkbox" style="margin:0;" onchange="window.setLoreCardsOff && window.setLoreCardsOff(this.checked)">
+          <span>Disable (send no lore cards)</span>
+        </label>
+        <div id="loreCardsSummary" style="font-size:0.7rem; opacity:0.75; margin-bottom:0.4rem;"></div>
+        <!-- 🪄 Generate a card from a prompt AND/OR a URL (2026-07-17, user). Same dual-source core as the Universe
+             generator: both fields feed ONE ai() call that fills the chosen template's fields, then a card is created. -->
+        <div style="border:1px dashed var(--box-border-color,#888); border-radius:4px; padding:6px; margin-bottom:0.5rem;">
+          <div style="font-size:0.68rem; opacity:0.75; margin-bottom:3px;">🪄 Generate a card — from a prompt and/or a URL</div>
+          <textarea id="loreGenPrompt" rows="2" placeholder="Describe a person, place, faction, artifact…" style="width:100%; box-sizing:border-box; font-size:80%; padding:3px 5px; resize:vertical; margin-bottom:3px;"></textarea>
+          <input id="loreGenUrl" type="text" placeholder="Optional — import from a URL (wiki, fandom…)" style="width:100%; box-sizing:border-box; font-size:80%; padding:3px 5px; margin-bottom:3px;">
+          <div style="display:flex; align-items:center; gap:4px; flex-wrap:wrap;">
+            <span style="font-size:68%; opacity:0.7;" data-tooltip="Which template shape the generated card fills">🧩</span>
+            <select id="loreGenTemplate" style="flex:1; min-width:0; font-size:75%; padding:1px 3px;" data-tooltip="Which template shape the generated card fills"></select>
+            <button id="loreGenBtn" onclick="window._loreGenerateCard && window._loreGenerateCard()" style="font-size:75%; padding:2px 8px;" data-tooltip="Read the prompt and/or the URL, then create a filled card">🪄 Generate</button>
+          </div>
+          <div id="loreGenStatus" style="font-size:65%; opacity:0.75; margin-top:3px; min-height:0.9em;"></div>
+        </div>
+        <div id="loreCardsList"></div>
+        <div style="display:flex; gap:4px; margin-top:0.3rem; flex-wrap:wrap;">
+          <button onclick="window._loreAddCard && window._loreAddCard()" style="font-size:75%;" data-tooltip="Add a new lore card">＋ New card</button>
+          <button onclick="window.exportLoreCards && window.exportLoreCards()" style="font-size:75%;" data-tooltip="Export all lore cards to a .lorecards.json file">📤 Export</button>
+          <button onclick="window.importLoreCardsFromFile && window.importLoreCardsFromFile()" style="font-size:75%;" data-tooltip="Import lore cards from a .lorecards.json file (added to the current set)">📥 Import</button>
+        </div>
+      </div>

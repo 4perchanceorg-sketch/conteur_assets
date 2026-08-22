@@ -1,0 +1,32 @@
+    <div style="display:flex; align-items:center; gap:0.4rem; padding:4px 8px; background:rgba(128,128,128,0.15); cursor:pointer; user-select:none; border-radius:4px 4px 0 0;" onclick="(function(){ var c=document.getElementById('pyramidContentEl'); c.hidden=!c.hidden; document.getElementById('pyramidArrow').textContent=c.hidden?'▶':'▼'; })()">
+      <span id="pyramidArrow" style="font-size:0.75rem;">▼</span>
+      <span style="font-size:0.8rem; font-weight:bold;">🧠 Story Memory — ledger · lore · timeline</span>
+      <span id="pyramidTokenBadge" style="font-size:0.65rem; opacity:0.55; margin-left:auto;"></span>
+    </div>
+    <div id="pyramidContentEl">
+      <div style="display:flex; flex-direction:column; gap:0.3rem; padding:3px 8px; background:rgba(128,128,128,0.07);">
+        <span style="font-size:0.65rem; opacity:0.6;">📒 WHY things stand as they do (ledger) + 🌍 the world's stable facts (lore) + 🕒 WHAT happened (timeline) · live prose at base</span>
+        <div style="display:flex; gap:0.25rem; align-items:center;">
+        <div style="display:flex; flex-direction:column; gap:0.2rem; margin-right:auto;">
+        <label style="font-size:0.65rem; display:flex; align-items:center; gap:0.2rem; cursor:pointer;" data-tooltip="Long-term memory switch. Checked = BIBLE mode: the pyramid is paused (no folding/filling, buttons inert) and your Story Bible + legacy summaries are sent instead. Unchecked = PYRAMID mode (automatic memory; the bible canon is withheld from the prompt). Same choice as the startup pop-up.">
+          <input type="checkbox" id="pyramidPauseChk" onchange="(window.setMemoryMode ? window.setMemoryMode(this.checked ? 'bible' : 'pyramid', {source:'panel-checkbox'}) : (window.setStoryPyramidPaused && window.setStoryPyramidPaused(this.checked)));" style="margin:0; cursor:pointer;"> ⏸️ Bible mode
+        </label>
+        <label style="font-size:0.65rem; display:flex; align-items:center; gap:0.2rem; cursor:pointer;" data-tooltip="Optional, experimental. When checked, the fold also keeps a private '📊 Scores & others' list of ONLY what you ask it to track in the story OVERVIEW (a count, a tally, a score, a custom reminder). It is shown here for you but is NEVER sent to the generation prompt — a memo pad, not memory the model writes from.">
+          <input type="checkbox" id="pyramidScoresChk" onchange="window.setStoryPyramidScores && window.setStoryPyramidScores(this.checked);" style="margin:0; cursor:pointer;"> 📊 Scores
+        </label>
+        </div>
+        <button id="pyramidUpdateBtn" onclick="if(window._preGenRunning||window.generatingStory){ window._pyramidManualQueued=true; this.textContent='⏳'; this.setAttribute('data-tooltip','Queued — will update automatically once the current generation/pre-gen finishes.'); console.log('[pyramid] manual 🔄 queued — will run once the generation/pre-gen finishes'); } window._runStoryPyramidUpdate && window._runStoryPyramidUpdate().then(function(){ window.renderStoryPyramidPanel && window.renderStoryPyramidPanel(); window._refreshSceneThenContext && window._refreshSceneThenContext(); });" style="font-size:70%; padding:2px 6px;" data-tooltip="Fold ONLY the NEW un-condensed prose (past the live window) into the memory, then refresh scene + context. Already caught up = no change to the tiers. To regenerate the tiers from scratch, use ♻️.">🔄</button>
+        <button id="pyramidRebuildBtn" onclick="window._pyramidRebuildBtnClick && window._pyramidRebuildBtnClick();" style="font-size:70%; padding:2px 6px;" data-tooltip="Rebuild the MEMORY (ledger + lore + timeline) from scratch — re-reads the whole settled story into fresh tiers. Fixes a drifted/wrong memory. Story text untouched. Undo available. Click again while running to stop (progress kept).">♻️</button>
+        <button id="pyramidClearBtn" onclick="window.clearStoryPyramid && window.clearStoryPyramid();" style="font-size:70%; padding:2px 6px;" data-tooltip="Clear the MEMORY (ledger + lore + timeline). Your story text stays. Undo available.">🗑️</button>
+        <button id="pyramidUndoBtn" hidden onclick="window.undoStoryPyramidClear && window.undoStoryPyramidClear();" style="font-size:70%; padding:2px 6px;" data-tooltip="Undo the last memory clear/compact/rebuild">↶</button>
+        <button id="pyramidCompactBtn" onclick="window.compactStoryPyramid && window.compactStoryPyramid();" style="font-size:70%; padding:2px 6px;" data-tooltip="Compact the MEMORY itself (tighter ledger + lore + merged older timeline lines). NEVER touches the story text. Undo available.">✂️</button>
+        <button id="pyramidCurateBtn" onclick="window.openPyramidCurationModal && window.openPyramidCurationModal();" style="font-size:70%; padding:2px 6px;" data-tooltip="Curate the memory — open a floating window listing every fact across the three tiers with a checkbox: keep (checked = active, sent to the AI), archive (unchecked = kept but never sent), revive (re-check an archived fact → active + pinned), or 🗑️ delete for good.">🗂️</button>
+        </div>
+        <div style="display:flex; gap:0.25rem; align-items:center; padding-top:3px; margin-top:1px; border-top:1px dashed var(--box-border-color,#888);">
+          <button id="clearAllContextBtn" onclick="window.clearAllContextMemory && window.clearAllContextMemory();" style="font-size:70%; padding:2px 6px;" data-tooltip="Clear memory (ledger/pyramid) + tracker + current scene + subtext + dynamics — all 5 at once. Undo available.">🧹 Clear all context</button>
+          <button id="clearAllContextUndoBtn" hidden onclick="window.undoClearAllContext && window.undoClearAllContext();" style="font-size:70%; padding:2px 6px;" data-tooltip="Undo the last combined clear (all 5)">↶</button>
+        </div>
+      </div>
+      <div id="pyramidGraphicEl" style="padding:8px 8px 4px;"></div>
+      <div id="pyramidPreviewEl" hidden style="border-top:1px solid var(--box-border-color,#888); padding:6px 8px; font-size:0.72rem; white-space:pre-wrap; max-height:14rem; overflow:auto;"></div>
+    </div>

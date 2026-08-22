@@ -1,0 +1,62 @@
+          <div style="display:flex; align-items:center; gap:6px; margin-bottom:3px;">
+            <div style="opacity:0.65;" id="cyoaPanelHeader">📖 Choose Your Own Adventure — what do you do?</div>
+            <button id="cyoaStopBtn" onclick="window.stopCyoaGeneration && window.stopCyoaGeneration()" data-tooltip="Stop generating choices" style="display:none; font-size:75%; padding:1px 6px;">✕ stop</button>
+            <button id="cyoaRetryMissingBtn" type="button" onclick="if(typeof regenCyoaMissingChoices==='function') regenCyoaMissingChoices(); else console.error('[cyoa] regenCyoaMissingChoices indisponible — Code.txt pas à jour ?');" data-tooltip="Regenerate just the choices that failed to generate" style="display:none; font-size:75%; padding:1px 6px;">🔁 Regenerate missing</button>
+          </div>
+          <div id="cyoaChoiceButtonsRow" style="display:flex; flex-direction:column; gap:2px;">
+            <div class="cyoaChoiceRow" data-idx="0" style="display:flex; align-items:stretch; gap:3px;">
+              <button type="button" class="cyoaChoiceBtn" data-idx="0" onclick="window.pickCyoaChoice && window.pickCyoaChoice(0)" disabled style="flex:1; text-align:left; padding:6px 8px; font-size:0.78rem; opacity:0.45; cursor:default;">—</button>
+              <button type="button" class="cyoaChoiceRegenBtn" data-idx="0" onclick="if(typeof regenCyoaChoice==='function') regenCyoaChoice(0); else console.error('[cyoa] regenCyoaChoice indisponible — Code.txt pas à jour ?');" disabled data-tooltip="Regenerate just this choice" style="font-size:78%; padding:2px 6px;">🔁</button>
+              <button type="button" class="cyoaChoiceSuggestBtn" data-idx="0" onclick="if(typeof suggestCyoaChoiceAlternatives==='function') suggestCyoaChoiceAlternatives(0); else console.error('[cyoa] suggestCyoaChoiceAlternatives indisponible — Code.txt pas à jour ?');" disabled data-tooltip="See 5 alternatives for this choice" style="font-size:78%; padding:2px 6px;">💡</button>
+            </div>
+            <div class="cyoaChoiceSuggestCtn" data-idx="0" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem; margin-bottom:2px;"></div>
+            <div class="cyoaChoiceRow" data-idx="1" style="display:flex; align-items:stretch; gap:3px;">
+              <button type="button" class="cyoaChoiceBtn" data-idx="1" onclick="window.pickCyoaChoice && window.pickCyoaChoice(1)" disabled style="flex:1; text-align:left; padding:6px 8px; font-size:0.78rem; opacity:0.45; cursor:default;">—</button>
+              <button type="button" class="cyoaChoiceRegenBtn" data-idx="1" onclick="if(typeof regenCyoaChoice==='function') regenCyoaChoice(1); else console.error('[cyoa] regenCyoaChoice indisponible — Code.txt pas à jour ?');" disabled data-tooltip="Regenerate just this choice" style="font-size:78%; padding:2px 6px;">🔁</button>
+              <button type="button" class="cyoaChoiceSuggestBtn" data-idx="1" onclick="if(typeof suggestCyoaChoiceAlternatives==='function') suggestCyoaChoiceAlternatives(1); else console.error('[cyoa] suggestCyoaChoiceAlternatives indisponible — Code.txt pas à jour ?');" disabled data-tooltip="See 5 alternatives for this choice" style="font-size:78%; padding:2px 6px;">💡</button>
+            </div>
+            <div class="cyoaChoiceSuggestCtn" data-idx="1" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem; margin-bottom:2px;"></div>
+            <div class="cyoaChoiceRow" data-idx="2" style="display:flex; align-items:stretch; gap:3px;">
+              <button type="button" class="cyoaChoiceBtn" data-idx="2" onclick="window.pickCyoaChoice && window.pickCyoaChoice(2)" disabled style="flex:1; text-align:left; padding:6px 8px; font-size:0.78rem; opacity:0.45; cursor:default;">—</button>
+              <button type="button" class="cyoaChoiceRegenBtn" data-idx="2" onclick="if(typeof regenCyoaChoice==='function') regenCyoaChoice(2); else console.error('[cyoa] regenCyoaChoice indisponible — Code.txt pas à jour ?');" disabled data-tooltip="Regenerate just this choice" style="font-size:78%; padding:2px 6px;">🔁</button>
+              <button type="button" class="cyoaChoiceSuggestBtn" data-idx="2" onclick="if(typeof suggestCyoaChoiceAlternatives==='function') suggestCyoaChoiceAlternatives(2); else console.error('[cyoa] suggestCyoaChoiceAlternatives indisponible — Code.txt pas à jour ?');" disabled data-tooltip="See 5 alternatives for this choice" style="font-size:78%; padding:2px 6px;">💡</button>
+            </div>
+            <div class="cyoaChoiceSuggestCtn" data-idx="2" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem; margin-bottom:2px;"></div>
+            <div class="cyoaChoiceRow" data-idx="3" style="display:flex; align-items:stretch; gap:3px;">
+              <button type="button" class="cyoaChoiceBtn" data-idx="3" onclick="window.pickCyoaChoice && window.pickCyoaChoice(3)" disabled style="flex:1; text-align:left; padding:6px 8px; font-size:0.78rem; opacity:0.45; cursor:default;">—</button>
+              <button type="button" class="cyoaChoiceRegenBtn" data-idx="3" onclick="if(typeof regenCyoaChoice==='function') regenCyoaChoice(3); else console.error('[cyoa] regenCyoaChoice indisponible — Code.txt pas à jour ?');" disabled data-tooltip="Regenerate just this choice" style="font-size:78%; padding:2px 6px;">🔁</button>
+              <button type="button" class="cyoaChoiceSuggestBtn" data-idx="3" onclick="if(typeof suggestCyoaChoiceAlternatives==='function') suggestCyoaChoiceAlternatives(3); else console.error('[cyoa] suggestCyoaChoiceAlternatives indisponible — Code.txt pas à jour ?');" disabled data-tooltip="See 5 alternatives for this choice" style="font-size:78%; padding:2px 6px;">💡</button>
+            </div>
+            <div class="cyoaChoiceSuggestCtn" data-idx="3" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem; margin-bottom:2px;"></div>
+            <div class="cyoaChoiceRow" data-idx="4" style="display:flex; align-items:stretch; gap:3px;">
+              <button type="button" class="cyoaChoiceBtn" data-idx="4" onclick="window.pickCyoaChoice && window.pickCyoaChoice(4)" disabled style="flex:1; text-align:left; padding:6px 8px; font-size:0.78rem; opacity:0.45; cursor:default;">—</button>
+              <button type="button" class="cyoaChoiceRegenBtn" data-idx="4" onclick="if(typeof regenCyoaChoice==='function') regenCyoaChoice(4); else console.error('[cyoa] regenCyoaChoice indisponible — Code.txt pas à jour ?');" disabled data-tooltip="Regenerate just this choice" style="font-size:78%; padding:2px 6px;">🔁</button>
+              <button type="button" class="cyoaChoiceSuggestBtn" data-idx="4" onclick="if(typeof suggestCyoaChoiceAlternatives==='function') suggestCyoaChoiceAlternatives(4); else console.error('[cyoa] suggestCyoaChoiceAlternatives indisponible — Code.txt pas à jour ?');" disabled data-tooltip="See 5 alternatives for this choice" style="font-size:78%; padding:2px 6px;">💡</button>
+            </div>
+            <div class="cyoaChoiceSuggestCtn" data-idx="4" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem; margin-bottom:2px;"></div>
+          </div>
+          <div id="cyoaFreeChoiceRow" style="display:flex; width:100%; margin-top:4px;">
+            <textarea id="cyoaFreeChoiceEl" onkeydown="if(event.key==='Enter' && !event.shiftKey && window.enterToGenerate !== false) { event.preventDefault(); window.submitCyoaFreeChoice && window.submitCyoaFreeChoice(); }" placeholder="Your own choice — write freely what you do…" style="display:block; width:100%; font-size:0.8rem; height:2.6rem; resize:vertical;"></textarea>
+            <button id="cyoaFreeChoiceSubmitBtn" onclick="window.submitCyoaFreeChoice && window.submitCyoaFreeChoice()" data-tooltip="Use this as your choice" style="margin-left:0.25rem;">▶️</button>
+          </div>
+          <!-- 🎲 Free-action roll confirm/change encart (2026-08-09, item 4 of project_cyoa_dice_feedback_batch_0809)
+               — populated by window.showCyoaFreeRollConfirm, hidden otherwise. Never blocks a routine action: it
+               only appears when the evaluation call actually proposed a roll. -->
+          <div id="cyoaFreeRollConfirmCtn" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.35rem 0.5rem; margin-top:4px; font-size:0.78rem;"></div>
+          <span id="cyoaStatusEl" style="opacity:0.7; display:block; margin-top:2px;"></span>
+          <!-- 🩸 Lasting harm ledger (2026-08-11) — the accumulated damage the AI is forbidden to walk back.
+               This panel is not decoration: the ledger is injected into every CYOA prompt as established fact,
+               so a wrong extraction would be permanent poison with no way out. ✕ per entry, 🗑️ for all.
+               Populated by window.renderCyoaHarmLedger; hidden while the ledger is empty. -->
+          <div id="cyoaHarmCtn" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem 0.4rem; margin-top:4px; font-size:0.72rem;"></div>
+          <!-- 🧭 Story arc (2026-08-15) — the goal, the route to it, and the elements prepared in advance to pull
+               a drifting story back. Fully editable on purpose: this is the spine the director steers by, and a
+               misread goal is something you fix in one click rather than play around. Populated by
+               window.renderCyoaArcPanel; hidden entirely while the director toggle is off. -->
+          <div id="cyoaArcCtn" style="display:none; border:1px solid var(--box-border-color,#888); border-radius:3px; padding:0.3rem 0.4rem; margin-top:4px; font-size:0.72rem;"></div>
+          <!-- ☠️ "The End" state (2026-08-03, user) — replaces the choice rows + free-choice box when a
+               <<<STORY_END>>> marker was detected (window.renderCyoaTheEnd / window.resumeCyoaStory). -->
+          <div id="cyoaEndPanel" style="display:none; text-align:center; padding:8px 6px; border:1px solid #8b5cf6; border-radius:4px; background:rgba(139,92,246,0.08); margin-top:4px;">
+            <div id="cyoaEndBanner" style="font-weight:bold; margin-bottom:5px;">☠️ The End</div>
+            <button id="cyoaEndResumeBtn" onclick="window.resumeCyoaStory && window.resumeCyoaStory()" data-tooltip="Not really the end? Clear this state and keep playing from here." style="font-size:75%; padding:2px 8px;">↩️ Not the end — resume</button>
+          </div>
