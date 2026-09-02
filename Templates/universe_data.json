@@ -1,0 +1,444 @@
+{
+  "post_apocalyptic": {
+    "story": "**World Setting — Post-Apocalyptic:** Civilization has collapsed. Society fractured into warring factions, isolated settlements, and lawless wastelands. Resources are scarce; survival is brutal. Infrastructure is ruined and reclaimed by nature or decay. Technology is scavenged and makeshift. Ground the world in the tension between survival and the ghost of what came before.",
+    "image": "post-apocalyptic wasteland, ruined city skyline, crumbling overgrown infrastructure, ash-grey sky, burned-out vehicles, survivors in scavenged patchwork gear, dust and rubble, desolate harsh atmosphere",
+    "short": "A collapsed world reclaimed by nature and decay.",
+    "elements": [
+      "crumbling overgrown skyscrapers",
+      "rusted highway choked with abandoned cars",
+      "grey ash wasteland",
+      "makeshift scrap settlement",
+      "dead forest under a heavy sky",
+      "lone wanderer on the far horizon"
+    ]
+  },
+  "heroic_fantasy": {
+    "story": "**World Setting — Heroic Fantasy:** A world of grand magic, legendary heroes, and mythical creatures. Ancient prophecies shape destinies. Magic is wondrous and powerful — wielded by mages, gods, or bound into artifacts. The landscape is dramatic: towering enchanted peaks, ruins of fallen empires, vibrant magical forests, and shining kingdoms. Honor, courage, and epic quests define the world.",
+    "image": "heroic fantasy epic landscape, majestic mountains with magical auras, ancient stone fortresses, enchanted forest with mystical light shafts, ornate armor and glowing magical weapons, dramatic sky with aurora-like energies",
+    "short": "A medieval world of magic and legend, Tolkien-esque.",
+    "elements": [
+      "towering castle on a crag",
+      "tall wizard spire",
+      "dragon circling far above",
+      "vast ancient forest",
+      "sweeping green plains",
+      "distant marching army"
+    ]
+  },
+  "low_fantasy": {
+    "story": "**World Setting — Low Fantasy / Grimdark:** Magic exists but is rare, dangerous, or morally corrupting. The world is gritty and morally grey — heroes are flawed, power is brutal, and there are no easy victories. Society is feudal and harsh. Keep the supernatural minimal and threatening. The world should feel dangerous, lived-in, and indifferent to its inhabitants.",
+    "image": "grimdark low fantasy, muddy medieval village, overcast gloomy sky, worn crude iron armor and weapons, mist-covered dark forest, crumbling stone walls, sparse torchlight, bleak cold atmosphere",
+    "short": "A grim, muddy medieval realm where magic is rare and dark.",
+    "elements": [
+      "mud-caked fortress",
+      "gallows on a bleak hill",
+      "foggy bog",
+      "burnt village ruins",
+      "crows over a distant battlefield",
+      "grey overcast moor"
+    ]
+  },
+  "modern_world": {
+    "story": "**World Setting — Modern / Contemporary:** The present-day world as we know it — cities, suburbs, technology, social dynamics. Ground the story in recognizable modern settings: streets, offices, cafés, apartments, vehicles. Use contemporary technology and social context. The familiar and mundane makes extraordinary events feel more impactful.",
+    "image": "modern contemporary urban setting, city streets with glass skyscrapers and traffic, people in everyday modern clothing, neon signs and storefronts, realistic daylight or streetlights, familiar contemporary environment",
+    "short": "The contemporary everyday world.",
+    "elements": [
+      "city skyline at dusk",
+      "busy highway interchange",
+      "suburban rooftops",
+      "glass office towers",
+      "urban park",
+      "distant airport runway"
+    ]
+  },
+  "cyberpunk": {
+    "story": "**World Setting — Cyberpunk:** A high-tech, low-life dystopian future. Megacorporations rule above governments. The city is a vertical labyrinth of neon, chrome, and decay. Cybernetic augmentations blur the line between human and machine. Hackers, street gangs, corporate assassins, and AIs inhabit this world. Style and excess coexist with poverty and oppression. It is always raining.",
+    "image": "cyberpunk neon-drenched city, rain-soaked streets, holographic advertisements, chrome cybernetic implants, towering brutalist megastructures, blue and purple neon reflections on wet pavement, dense crowded night market",
+    "short": "A neon-drenched high-tech dystopian megacity.",
+    "elements": [
+      "neon megacity skyline",
+      "rain-slick neon alley",
+      "towering corporate arcology",
+      "giant holographic billboards",
+      "flying-car traffic lanes",
+      "smoggy industrial sprawl"
+    ]
+  },
+  "biopunk": {
+    "story": "**World Setting — Biopunk:** Biotechnology has supplanted digital technology. Corporations engineer living organisms as tools, weapons, and infrastructure. Bodies are modified with grafted organs and engineered flesh. Architecture is grown rather than built. The line between natural and artificial life has dissolved. Society is shaped by biological patents, genetic castes, and the horror and wonder of living machines.",
+    "image": "biopunk organic architecture, flesh-grown walls with pulsing veins and bioluminescent nodes, grafted biological implants visible on skin, engineered plant-organism hybrids, humid greenhouse atmosphere, eerie glow from living tissue",
+    "short": "An organic world of living, bio-engineered technology.",
+    "elements": [
+      "vat-grown organic towers",
+      "bioluminescent fungal forest",
+      "pulsing flesh-like architecture",
+      "genetically overgrown ruins",
+      "membranous bio-domes",
+      "drifting spore mist"
+    ]
+  },
+  "steampunk": {
+    "story": "**World Setting — Steampunk:** A Victorian-era world where steam power and clockwork mechanics dominate instead of electronics. Airships crisscross smoggy skies. Cities are layered with copper pipes, brass fittings, and gaslit streets. The Industrial Revolution never slowed — it accelerated into wonders and horrors. Class disparity is stark. Inventors, adventurers, and aristocrats navigate a world of mechanical marvels.",
+    "image": "steampunk Victorian cityscape, brass gears and copper pipes, gas lamp-lit cobblestone streets, airships in smoggy sky, ornate clockwork machinery, Victorian fashion with leather goggles and mechanical prosthetics, warm amber steam vents",
+    "short": "A Victorian world of steam and brass machines.",
+    "elements": [
+      "brass clockwork city",
+      "airship docked at a tower",
+      "steam-belching factories",
+      "gaslit cobbled streets",
+      "copper-pipe rooftops",
+      "distant dirigible fleet"
+    ]
+  },
+  "clockwork_punk": {
+    "story": "**World Setting — Clockwork Punk / Gaslamp Fantasy:** A world of intricate clockwork precision where mechanical automatons serve as labor and companions. Baroque or Edwardian aesthetics fused with fantastical machinery. Magic and mechanism intertwine — enchanted gears, alchemical engines, arcane automata. Society values craftsmanship and ingenuity above all. Mystery and wonder live in the spaces between cogs.",
+    "image": "clockwork gaslamp fantasy, intricate brass automata with rune-etched gears, ornate mechanical clocks of massive scale, warm gaslight glow, Baroque gothic architecture, alchemical workshop with bubbling apparatus and spinning mechanisms",
+    "short": "A gaslamp world of intricate clockwork and gears.",
+    "elements": [
+      "giant clock-tower mechanism",
+      "gear-driven citadel",
+      "gaslamp plaza",
+      "foggy lantern-lit canals",
+      "cog-filled workshops",
+      "brass automaton statues"
+    ]
+  },
+  "dieselpunk": {
+    "story": "**World Setting — Dieselpunk:** Imagine the 1920s–1940s never ended but grew darker and more industrial. Diesel-powered machines of massive scale dominate — hulking war machines, art-deco aircraft, factory cities. The aesthetic is noir-tinged brutalism: chrome, soot, and propaganda posters. Fascist regimes and resistance movements clash in a perpetual industrial age. Jazz, grease, and gunpowder.",
+    "image": "dieselpunk industrial cityscape, art-deco architecture with soot and grime, massive diesel-engine war machines and armored vehicles, propaganda posters on brick walls, smoky grey sky, leather-coated soldiers and laborers, factory smokestacks at full blast",
+    "short": "An interwar diesel-powered industrial age.",
+    "elements": [
+      "hulking diesel factories",
+      "art-deco skyscrapers",
+      "riveted iron warship",
+      "smoky industrial harbor",
+      "propeller aircraft overhead",
+      "soot-stained streets"
+    ]
+  },
+  "atompunk": {
+    "story": "**World Setting — Atompunk / Atomic Age Retro-Future:** The optimistic 1950s vision of the future, realized — but with atomic-age anxiety underneath. Gleaming white space colonies, rocket fins on everything, robots as household servants, and nuclear power as the answer to all problems. Society is orderly on the surface, conformist and paranoid beneath. Radiation and fallout lurk at the edges of this chrome-and-Bakelite world.",
+    "image": "atompunk 1950s retro-futuristic setting, chrome rocket ships on launch pads, Googie architecture with sweeping curves, pastel color palette, domestic robots, atomic symbol motifs, gleaming white interiors with Bakelite panels and glowing vacuum tubes",
+    "short": "Retro-futuristic atomic-age optimism.",
+    "elements": [
+      "googie atomic city",
+      "rocket launch gantry",
+      "chrome monorail",
+      "ray-gun gothic spires",
+      "mid-century domed labs",
+      "distant mushroom cloud on the horizon"
+    ]
+  },
+  "solarpunk": {
+    "story": "**World Setting — Solarpunk:** A hopeful, ecological future where humanity harmonized with nature instead of destroying it. Cities are lush with vertical gardens and solar-powered infrastructure seamlessly integrated into living ecosystems. Communities are cooperative and diverse. Technology serves life rather than dominating it. This world is optimistic but not naive — it was earned through struggle and remains fragile.",
+    "image": "solarpunk utopian city, lush vertical gardens on every building, solar panels woven into living architecture, clean canals and bioluminescent parks, diverse community in colorful practical clothing, warm golden sunlight, wind turbines among flowering plants",
+    "short": "A lush green eco-utopia of renewable harmony.",
+    "elements": [
+      "vertical garden towers",
+      "solar-panel canopies",
+      "wind-turbine hills",
+      "green rooftop city",
+      "lush canal gardens",
+      "clean bright skyline"
+    ]
+  },
+  "renaissance": {
+    "story": "**World Setting — Renaissance Europe:** The great flourishing of art, science, and political intrigue in 15th–16th century Europe. City-states jostle for power through diplomacy, trade, and war. Painters, sculptors, and thinkers reshape human understanding. The Church holds immense power even as it splinters. Merchants and nobles compete for influence. Beautiful, ambitious, and ruthless in equal measure.",
+    "image": "Renaissance European setting, grand marble piazza with ornate fountain, velvet doublets and elaborate ruffs, oil-painting chiaroscuro light, grand cathedral facade, merchants and nobles in fine attire, cobblestone streets and torch sconces",
+    "short": "Renaissance Europe of art and grandeur.",
+    "elements": [
+      "domed cathedral city",
+      "marble palazzo",
+      "arched stone bridge over a river",
+      "terracotta rooftops",
+      "vineyard hills",
+      "grand piazza with fountains"
+    ]
+  },
+  "medieval": {
+    "story": "**World Setting — Medieval / Dark Ages:** A world of feudal kingdoms, stone castles, and muddy peasant villages. The Church and the sword define society. Life is hard, short, and violent for the common folk. Lords command absolute power. Plague, famine, and warfare are constant companions. Honor, duty, and survival compete with superstition and fear. Grounded realism — no magic unless genre calls for it.",
+    "image": "medieval dark ages setting, grey stone castle ramparts with battlements, muddy village with thatched roofs, overcast sky, crude iron chainmail and weapons, torchlit great hall interior, fog-covered moorland, peasants in rough woolen garments",
+    "short": "A dark-ages medieval world.",
+    "elements": [
+      "stone keep on a hill",
+      "walled town",
+      "thatched village",
+      "monastery ruins",
+      "muddy market road",
+      "distant castle silhouette"
+    ]
+  },
+  "ancient_greece": {
+    "story": "**World Setting — Ancient Greece & Rome:** The classical world of marble temples, city-states, legions, and philosophical academies. Gods meddle in mortal affairs as real forces. Senate debates and battlefield glory define greatness. Slaves, citizens, and soldiers navigate rigid social hierarchies. Philosophy, rhetoric, and honor are paramount. The Mediterranean is the center of all civilization — or so its inhabitants believe.",
+    "image": "ancient Greek or Roman setting, white marble temple columns with golden light, blue Mediterranean sea, toga and himation-clad citizens in a sunlit agora, trireme ships in harbor, olive trees and stone amphitheater, vibrant fresco murals",
+    "short": "Classical Greece and Rome.",
+    "elements": [
+      "marble temple on a hill",
+      "colonnaded forum",
+      "open amphitheater",
+      "olive-grove hills",
+      "aqueduct across a valley",
+      "harbor with triremes"
+    ]
+  },
+  "ancient_egypt": {
+    "story": "**World Setting — Ancient Egypt:** The eternal kingdom of the Nile, where pharaohs are gods and the dead are as important as the living. Massive monuments rise from the desert. Priests guard divine secrets. The bureaucracy of an empire stretches across a river civilization. Magic — Heka — is real and woven into statecraft and ritual. The desert is both provider and destroyer.",
+    "image": "ancient Egyptian setting, colossal stone statues and hieroglyph-carved obelisks, golden desert sands under blazing sun, Nile river with papyrus reeds, linen-clad priests and warriors in kohl eyeliner, pyramid silhouettes on the horizon, rich lapis lazuli and gold palette",
+    "short": "Ancient Egypt of pyramids and the Nile.",
+    "elements": [
+      "great pyramids at dusk",
+      "sphinx half-buried in sand",
+      "temple of towering columns",
+      "Nile reeds and feluccas",
+      "rows of obelisks",
+      "endless desert dunes"
+    ]
+  },
+  "feudal_japan": {
+    "story": "**World Setting — Feudal Japan:** The age of samurai, shogunates, and warring clans. Bushido — the way of the warrior — defines honor. Ninjas move in shadows while daimyo scheme for power. Zen temples offer stillness amid chaos. Nature is sacred: cherry blossoms, misty mountains, and rice fields serve as constant backdrop. The spiritual and the violent are inseparable.",
+    "image": "feudal Japanese setting, cherry blossom trees in bloom over stone temple path, misty mountain peaks, samurai in lacquered armor, pagoda architecture with curved rooftops, lantern-lit night market, koi pond and zen rock garden, ink-painting quality atmosphere",
+    "short": "Feudal Japan of castles and cherry blossoms.",
+    "elements": [
+      "hilltop pagoda castle",
+      "cherry-blossom valley",
+      "torii gate by a lake",
+      "misty bamboo forest",
+      "terraced rice paddies",
+      "snow-capped Mount Fuji"
+    ]
+  },
+  "viking_norse": {
+    "story": "**World Setting — Viking / Norse:** The age of longships, fjords, and raids at the edges of the known world. Norse mythology is lived reality — Odin watches, Fate is woven by the Norns, and Valhalla awaits the worthy. Jarl and thrall define social hierarchy. Winter is brutal. The sea is both highway and grave. Runes carry power. Honor demands action even when action means death.",
+    "image": "Viking Norse setting, rugged fjord coastline with longships on grey water, fur-clad warriors with rune-etched shields and axes, mead hall with carved wooden beams and fire-pit, northern lights over snow-covered pine forest, dramatic stormy sky",
+    "short": "A Norse world of fjords and longships.",
+    "elements": [
+      "longships on a fjord",
+      "timber great hall",
+      "snowy mountain pass",
+      "rune-stone clearing",
+      "stormy northern sea",
+      "aurora over the peaks"
+    ]
+  },
+  "wild_west": {
+    "story": "**World Setting — Wild West / Frontier:** The American frontier of the late 19th century, where the rule of law barely reaches. Dusty cattle towns, outlaws, sheriffs, and railroad barons compete for control. Gold and land fuel violence. The frontier is a place of brutal freedom — fortunes are made and lost, and justice is personal. Saloons, six-shooters, and endless plains define the world.",
+    "image": "wild west frontier, dusty main street with wooden saloon facades, cowboy in wide-brimmed hat and duster coat, desert mesa landscape under scorching sun, lone horseman silhouetted against sunset, hitching posts and wagon wheels, warm sepia-golden tone",
+    "short": "The American frontier West.",
+    "elements": [
+      "dusty desert mesa",
+      "wooden frontier town",
+      "railroad across the plain",
+      "canyon with tall cacti",
+      "lone windmill ranch",
+      "wide sky over the prairie"
+    ]
+  },
+  "space_opera": {
+    "story": "**World Setting — Space Opera:** A vast, inhabited galaxy of alien civilizations, starfaring empires, and ancient cosmic mysteries. Faster-than-light travel, planet-spanning governments, and wars fought across star systems. Alien species range from humanoid to utterly incomprehensible. Ancient precursor civilizations left ruins and secrets across the cosmos. The scale is epic — personal stories play out against galactic stakes.",
+    "image": "space opera setting, massive starship silhouetted against a nebula, alien planet cityscape with exotic architecture, diverse alien species in advanced attire, energy weapons and holographic displays, dramatic cosmic lighting of gas clouds and distant stars",
+    "short": "A grand galactic space opera.",
+    "elements": [
+      "ringed planet over an alien city",
+      "massive starship fleet",
+      "spaceport spires",
+      "nebula-lit sky",
+      "floating orbital station",
+      "twin suns on the horizon"
+    ]
+  },
+  "hard_sci_fi": {
+    "story": "**World Setting — Hard Sci-Fi / Near Future:** The near future — 50 to 200 years from now — extrapolated from real science. AI, orbital habitats, genetic engineering, and climate engineering are real. Society has adapted unevenly and realistically. Ground every element in scientific plausibility. The universe is vast, indifferent, and governed by physics — wonder comes from understanding, not magic.",
+    "image": "near future hard sci-fi, modular space habitat interior with Earth visible through porthole, realistic space suits with HUD visors, sleek minimalist high-tech architecture, holographic data interfaces, utilitarian but advanced aesthetic, scientific equipment and crew",
+    "short": "A plausible near-future, hard sci-fi world.",
+    "elements": [
+      "sleek research station",
+      "vast solar-array fields",
+      "red Mars-like terrain",
+      "orbital habitat ring",
+      "functional spaceport",
+      "rover on a distant ridge"
+    ]
+  },
+  "prehistoric": {
+    "story": "**World Setting — Prehistoric / Primal World:** The dawn of humanity — or a world before it. Megafauna rule vast untamed wilderness. Tribal communities survive by their wits against predators, starvation, and rival groups. Fire is sacred. Language is gestural and elemental. Shamans commune with spirits. The world is extraordinarily dangerous and extraordinarily beautiful. Strip technology to stone, bone, and sinew.",
+    "image": "prehistoric primal world, vast primeval jungle and savanna, towering megafauna in background, cave dwelling lit by fire, early humans in animal fur wraps, misty ancient forest with giant ferns and mosses, bone and stone tools, volcanic mountains in distance",
+    "short": "A primal prehistoric world.",
+    "elements": [
+      "volcanic mountain range",
+      "vast fern jungle",
+      "herd of dinosaurs grazing afar",
+      "bubbling tar pits",
+      "primal waterfall",
+      "steaming swamp"
+    ]
+  },
+  "gothic_victorian": {
+    "story": "**World Setting — Gothic / Victorian:** 19th-century Britain steeped in fog, gas lamps, and repressed darkness. Class divides are stark. The Industrial Revolution churns alongside spiritual yearning and occult fascination. Ghost stories, séances, and madhouses are part of polite society. Crumbling mansions, fog-shrouded moors, and gaslit streets set the stage for dread and desire in equal measure.",
+    "image": "gothic Victorian setting, fog-drenched gaslit cobblestone streets, crumbling manor house with iron gates, Victorian dress with corsets and top hats, candlelit interior with taxidermy and dark oil portraits, cemetery with gothic headstones, overcast moonlit sky",
+    "short": "A gothic Victorian gloom.",
+    "elements": [
+      "fog-shrouded gothic manor",
+      "crooked cobbled streets",
+      "iron-gated cemetery",
+      "cathedral spires in mist",
+      "gaslit stone bridge",
+      "ravens over the rooftops"
+    ]
+  },
+  "fairy_tale": {
+    "story": "**World Setting — Fairy Tale / Enchanted World:** A world shaped by ancient magic and timeless archetypes. Forests are alive and sentient. Curses carry real weight. Witches, fae, and shapeshifters operate by their own inscrutable rules. Royalty is real but dangerous. Magic is everywhere — in the spinning wheel, the poisoned apple, the glass shoe. Beauty and horror live side by side in this world of wonder.",
+    "image": "fairy tale enchanted world, glowing magical forest with giant luminescent mushrooms, whimsical storybook castle with colorful towers, soft ethereal magical light, anthropomorphic animals in fine clothing, oversized enchanted flowers, pastel dreamlike color palette",
+    "short": "An enchanted storybook world.",
+    "elements": [
+      "fairytale castle with tall spires",
+      "enchanted glowing forest",
+      "tiny mushroom cottage",
+      "rainbow waterfall",
+      "flower-filled meadow",
+      "distant tower on a hill"
+    ]
+  },
+  "underwater": {
+    "story": "**World Setting — Underwater / Deep Sea Civilization:** Civilization exists beneath the ocean — in pressure-domes, coral megacities, or as aquatic beings. The deep sea is the frontier: crushing pressure, bioluminescent creatures, and unexplored trenches. Light dims with depth. Everything moves differently. Resources come from hydrothermal vents, kelp farms, and wreck salvage. The surface world is myth or memory.",
+    "image": "underwater deep sea civilization, bioluminescent coral city beneath ocean, shafts of filtered blue-green light from above, aquatic architecture of shells and living coral, giant luminescent sea creatures in background, particles floating in dark ocean water",
+    "short": "A deep-sea, underwater realm.",
+    "elements": [
+      "coral-reef cityscape",
+      "sunken ruins",
+      "bioluminescent trench",
+      "swaying kelp forest",
+      "light shafts piercing the depths",
+      "distant leviathan silhouette"
+    ]
+  },
+  "arabian_nights": {
+    "story": "**World Setting — Arabian Nights / Desert Caliphate:** A world of sand, spice, and stories within stories — inspired by the medieval Islamic Golden Age and One Thousand and One Nights. Great caliphates rule from jeweled palace-cities. Djinn and magical creatures are real and dangerous. Merchants travel silk roads through burning deserts. Astronomy, mathematics, and poetry flourish alongside intrigue, assassins, and divine law.",
+    "image": "Arabian Nights desert setting, golden domed palace-city rising from sand dunes, ornate tilework and arabesque patterns, spice bazaar with colorful silks, djinn smoke curling in torchlit courtyard, starlit desert sky, figures in flowing robes and turbans",
+    "short": "An Arabian Nights desert fantasy.",
+    "elements": [
+      "domed desert palace",
+      "bazaar rooftops",
+      "oasis with palms",
+      "sandstone minarets",
+      "dunes at sunset",
+      "flying carpet far overhead"
+    ]
+  },
+  "urban_fantasy": {
+    "story": "**World Setting — Urban Fantasy:** Magic and myth hidden beneath the surface of the modern world. Vampires own nightclubs. Werewolves run street gangs. Fae courts operate out of corporate offices. Ancient monsters navigate smartphones and subway systems. The magical underworld exists parallel to mundane reality — known to some, invisible to most. The tension between old magic and modern life defines everything.",
+    "image": "urban fantasy modern city, neon-lit street with subtle magical glow on edges, hidden rune symbols on brick walls, supernatural beings in modern clothing, magical energy effects blending with streetlights, enchanted alley visible through an archway in the contemporary cityscape",
+    "short": "The modern world with hidden magic.",
+    "elements": [
+      "city skyline hiding a glowing rune",
+      "neon street with arcane graffiti",
+      "old cathedral among skyscrapers",
+      "misty park with faint fae lights",
+      "rooftop shimmering with a portal",
+      "subway entrance glowing faintly"
+    ]
+  },
+  "mythic_china": {
+    "story": "**World Setting — Ancient Imperial China:** The celestial empire at its most magnificent and brutal — dynasties, the Mandate of Heaven, and the constant struggle of court intrigue. Confucian hierarchy governs all. Taoist mysticism and Buddhist temples offer counterpoint. Rivers and mountains are sacred. Silk, jade, and poetry define high culture while peasants endure flood and drought. Dragons and fox spirits are real presences.",
+    "image": "ancient imperial Chinese setting, ornate red and gold palace with sweeping curved rooftiles, mist-covered mountain landscape with pine trees, scholars and warriors in silk hanfu, jade carvings and paper lanterns, dragon motifs on carved stone, calligraphic scrolls and incense smoke",
+    "short": "Ancient imperial China.",
+    "elements": [
+      "mountaintop pagoda temple",
+      "misty karst peaks",
+      "red-walled imperial palace",
+      "foggy rice terraces",
+      "carved stone dragon bridge",
+      "great wall snaking over hills"
+    ]
+  },
+  "aztec_mesoamerican": {
+    "story": "**World Setting — Aztec / Mesoamerican:** The great civilizations of pre-Columbian Mesoamerica at their height — cities of stone and sacrifice, cosmic time cycles, and gods that demand blood. The calendar is sacred; the heavens are a battlefield of divine forces. Warriors seek honor through ritual combat. Vast trade networks connect jungle cities. The world is vivid, violent, and spiritually intense.",
+    "image": "Aztec Mesoamerican setting, towering stone pyramid temple with steep steps, tropical jungle surrounding stone city, warriors in feathered headdresses and obsidian weapons, jade and turquoise jewelry, ceremonial fire against jungle backdrop, tropical birds and lush vegetation",
+    "short": "An Aztec and Mesoamerican world.",
+    "elements": [
+      "step-pyramid temple",
+      "jungle-shrouded ruins",
+      "lake city with causeways",
+      "carved stone idols",
+      "terraced maize fields",
+      "volcano beyond the canopy"
+    ]
+  },
+  "arctic_frozen": {
+    "story": "**World Setting — Arctic / Frozen World:** A world dominated by ice, tundra, and relentless cold. Survival requires total adaptation — to the elements, to the endless winter, to the darkness. Communities are small, tight, and ruthless about necessity. The aurora lights the night sky. Beneath the ice, things move. Polar megafauna, blizzards, and the psychological weight of months-long darkness shape everything.",
+    "image": "arctic frozen world, vast ice tundra under northern lights aurora, snow-covered dark pine forest, figures in thick layered fur survival gear, ice cave interior with blue crystal formations, breath mist in frozen air, polar bears or mammoths visible in distance",
+    "short": "A frozen arctic world.",
+    "elements": [
+      "towering glacier cliffs",
+      "snow-buried ruins",
+      "aurora over an ice field",
+      "frozen sea with drifting bergs",
+      "windswept tundra",
+      "distant ice fortress"
+    ]
+  },
+  "jungle_lost": {
+    "story": "**World Setting — Jungle / Lost World:** Dense, primal jungle conceals ancient ruins, undiscovered species, and forgotten civilizations. Explorers, treasure hunters, and indigenous peoples navigate this world of overwhelming life — where predators lurk behind every frond and the jungle itself resists intrusion. Lost cities. Ancient curses. Creatures that science hasn't named. The jungle swallows secrets and people alike.",
+    "image": "jungle lost world, dense tropical jungle with massive ancient stone ruins swallowed by vines, dappled green light through forest canopy, exotic oversized fauna and flora, adventurers with torches, moss-covered carved stone faces, humid misty atmosphere",
+    "short": "A lost-world jungle.",
+    "elements": [
+      "overgrown temple ruins",
+      "dense rainforest canopy",
+      "thundering waterfall",
+      "vine-draped cliffs",
+      "misty river delta",
+      "ancient stone idol in the green"
+    ]
+  },
+  "military_wwii": {
+    "story": "**World Setting — WWII / Military Industrial:** The world at total war — vast armies, industrial-scale destruction, and the crushing weight of ideology on human lives. Frontlines stretch across continents. Spies and resistance fighters operate in occupied cities. Technology leaps forward under the pressure of war. Ordinary people make extraordinary choices when civilization's survival hangs in the balance.",
+    "image": "WWII military industrial setting, bombed urban ruins with searchlights in smoky sky, soldiers in period-accurate uniforms and helmets, heavy battle tanks and artillery, resistance fighters in civilian clothes, dramatic war photography lighting, propaganda posters on damaged walls",
+    "short": "A WWII industrial military world.",
+    "elements": [
+      "bombed-out city ruins",
+      "airfield with parked bombers",
+      "trench-scarred landscape",
+      "naval fleet at sea",
+      "factory district under a grey sky",
+      "distant tank column"
+    ]
+  },
+  "cosmic_horror": {
+    "story": "**World Setting — Cosmic Horror / Lovecraftian:** The universe is incomprehensibly vast and ancient, and humanity is utterly insignificant within it. Entities beyond human comprehension exist at the edges of reality. Knowledge destroys sanity. Ancient cults serve sleeping gods. Reality itself is fragile — wrong angles reveal impossible geometries. The horror is not the monster but the realization that the monster doesn't notice you.",
+    "image": "cosmic horror Lovecraftian setting, impossible non-Euclidean architecture in fog, eldritch mass barely visible in darkness, lone figure dwarfed by alien structure, sickly greenish-grey palette, deep space void with geometric patterns, crumbling seaside town at night under alien starless sky",
+    "short": "A Lovecraftian cosmic horror.",
+    "elements": [
+      "impossible non-euclidean ruins",
+      "tentacled silhouette beyond the clouds",
+      "fog-drowned coastal town",
+      "a star-wrong sky",
+      "cyclopean stone monoliths",
+      "eldritch glow on the horizon"
+    ]
+  },
+  "dystopian": {
+    "story": "**World Setting — Dystopian:** A society that appears ordered but is fundamentally oppressive. The state — or corporation — controls information, movement, and thought. Propaganda is pervasive and cheerful. Surveillance is total. Individual identity is suppressed in favor of collective compliance. Beneath the ordered surface, dissatisfaction simmers in small, dangerous ways. The horror is recognizable: this world is not entirely unlike our own.",
+    "image": "dystopian authoritarian cityscape, identical brutalist concrete housing blocks, massive propaganda murals on weathered grey walls, surveillance cameras and patrol drones against overcast sky, citizens in drab identical uniforms, lone figure dwarfed by oppressive monolithic architecture, muted grey and red palette with searchlights cutting through fog",
+    "short": "An oppressive dystopian state.",
+    "elements": [
+      "monolithic brutalist towers",
+      "propaganda-screen plaza",
+      "grey regimented housing blocks",
+      "surveillance spires",
+      "smog-choked skyline",
+      "high checkpoint walls"
+    ]
+  },
+  "superhero": {
+    "story": "**World Setting — Superhero:** A world where extraordinary individuals with superhuman powers must decide what to do with that power. The city is the stage — criminals, vigilantes, government agencies, and charismatic villains compete for control. Power reveals and distorts character. Identity fractures between the mask and the person beneath it. Morality is never simple when you can stop a bullet but not a broken system.",
+    "image": "superhero urban setting, dramatic city skyline at dusk with glowing neon and skyscrapers, costumed heroic figure silhouetted against luminous sky atop a rooftop, dynamic action composition, vivid primary colors contrasting with deep noir shadows, dramatic cinematic lighting and lens flare, comic-book inspired graphic boldness",
+    "short": "A comic-book superhero metropolis.",
+    "elements": [
+      "gleaming hero-city skyline",
+      "skyscraper with a rooftop beacon",
+      "grand suspension bridge",
+      "downtown damaged after a battle",
+      "tiny flying figure far above",
+      "bright dramatic skyline"
+    ]
+  }
+}
