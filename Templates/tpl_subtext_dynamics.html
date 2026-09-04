@@ -1,0 +1,60 @@
+  <!-- Subtext & Intentions panel (hidden info for AI, never revealed in story) -->
+  <div id="subtextPanelEl" style="border:1px solid var(--box-border-color,#888); border-radius:4px; background:var(--box-color,#fff); overflow:visible;">
+    <div style="display:flex; align-items:center; gap:0.4rem; padding:4px 8px; background:rgba(128,128,128,0.15); cursor:pointer; user-select:none;" onclick="(function(){ var c=document.getElementById('subtextContentEl'); c.hidden=!c.hidden; document.getElementById('subtextArrow').textContent=c.hidden?'▶':'▼'; })()">
+      <span id="subtextArrow" style="font-size:0.75rem;">▼</span>
+      <span id="subtextPanelTitleEl" style="font-size:0.8rem; font-weight:bold;">🎭 Subtext &amp; Intentions</span>
+      <label id="subtextDisableLbl" onclick="event.stopPropagation();" style="font-size:0.62rem; opacity:0.75; margin-left:auto; display:flex; align-items:center; gap:3px; cursor:pointer;" data-tooltip="Turn this panel off completely — its hidden intentions are no longer sent to the AI. Your entries are kept.">
+        <input type="checkbox" id="subtextDisableChk" style="margin:0; cursor:pointer;" onchange="window.setSubtextDisabled && window.setSubtextDisabled(this.checked)"> <span id="subtextDisableTextEl">🚫 Do not use</span>
+      </label>
+      <span id="subtextInfoIconEl" style="font-size:0.65rem; opacity:0.55;" data-tooltip="Hidden info that informs AI writing but never appears verbatim in the story. Per-character entries are known only to that character.">ℹ️</span>
+    </div>
+    <div id="subtextContentEl">
+      <div id="subtextPerCharContainer">
+        <div id="subtextNoCharsEl" style="padding:8px; font-size:0.7rem; opacity:0.6;">(No named characters yet — add characters in the Characters panel.)</div>
+      </div>
+      <div style="border-top:2px solid var(--box-border-color,#888);">
+        <div id="subtextSceneBarEl" style="display:flex; gap:0.4rem; padding:3px 8px; align-items:center; background:rgba(128,128,128,0.07);">
+          <span id="subtextSceneLabelEl" style="font-size:0.65rem; opacity:0.6;">📍 Scene-level subtext (hidden info not tied to any character)</span>
+        </div>
+        <textarea id="subtextSceneEl" oninput="window.saveSubtextScene && window.saveSubtextScene(this.value);" style="display:block; width:100%; font-size:0.75rem; min-height:2.5rem; resize:vertical; border:none; background:transparent; padding:5px 8px; box-sizing:border-box; color:inherit;" placeholder="e.g. The building is secretly rigged with explosives — no character knows"></textarea>
+      </div>
+      <!-- Open secret (2026-07-23, user) : « ce que tout le monde sait, mais que personne n'évoque ». Empty field ⇒ nothing sent to the AI. -->
+      <div style="border-top:2px solid var(--box-border-color,#888);">
+        <div id="subtextSecretBarEl" style="display:flex; gap:0.4rem; padding:3px 8px; align-items:center; background:rgba(128,128,128,0.07);">
+          <span id="subtextOpenSecretLabelEl" style="font-size:0.65rem; opacity:0.6;" data-tooltip="The elephant in the room: EVERY character knows this, it colors how they all behave, yet each of them keeps it out of spoken words. Leave empty and nothing is sent to the AI.">🐘 Open secret — what everyone knows but no one ever mentions</span>
+        </div>
+        <textarea id="subtextOpenSecretEl" oninput="window.saveSubtextOpenSecret && window.saveSubtextOpenSecret(this.value);" style="display:block; width:100%; font-size:0.75rem; min-height:2.5rem; resize:vertical; border:none; background:transparent; padding:5px 8px; box-sizing:border-box; color:inherit;" placeholder="e.g. The king is dying — the whole court knows it, and no one dares say it aloud"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- Character Dynamics panel (directed per-character relationships; hidden context for the AI, never quoted verbatim) — stacked directly under Subtext -->
+  <div id="dynamicsPanelEl" style="border:1px solid var(--box-border-color,#888); border-radius:4px; background:var(--box-color,#fff); overflow:visible;">
+    <div id="dynamicsHeaderBarEl" style="display:flex; align-items:center; gap:0.4rem; padding:4px 8px; background:rgba(128,128,128,0.15); cursor:pointer; user-select:none;" onclick="(function(){ var c=document.getElementById('dynamicsContentEl'); c.hidden=!c.hidden; document.getElementById('dynamicsArrow').textContent=c.hidden?'▶':'▼'; })()">
+      <span id="dynamicsArrow" style="font-size:0.75rem;">▼</span>
+      <span style="font-size:0.8rem; font-weight:bold;">🤝 Character Dynamics</span>
+      <label onclick="event.stopPropagation();" style="font-size:0.62rem; opacity:0.75; margin-left:auto; display:flex; align-items:center; gap:3px; cursor:pointer;" data-tooltip="Turn this panel off completely — dynamics stop auto-updating and are no longer sent to the AI. Your stances and 🔒 locks are kept.">
+        <input type="checkbox" id="dynamicsDisableChk" style="margin:0; cursor:pointer;" onchange="window.setDynamicsDisabled && window.setDynamicsDisabled(this.checked)"> 🚫 Do not use
+      </label>
+      <button id="dynamicsUpdateBtn" onclick="event.stopPropagation(); window._dynamicsUpdateRunning=false; if(window._preGenRunning||window.generatingStory){ window._dynamicsManualQueued=true; this.textContent='⏳'; this.setAttribute('data-tooltip','Queued — will update automatically once the current generation/pre-gen finishes.'); console.log('[chardyn] manual 🔄 queued — will run once the generation/pre-gen finishes'); } window._runDynamicsUpdate && window._runDynamicsUpdate();" style="font-size:70%; padding:2px 6px;" data-tooltip="Update the dynamics now from the recent story (locked 🔒 cells are left untouched)">🔄</button>
+      <button id="dynamicsClearBtn" onclick="event.stopPropagation(); window.clearAllDynamics && window.clearAllDynamics();" style="font-size:70%; padding:2px 6px;" data-tooltip="Clear ALL dynamics (every stance + 🔒 lock + 🎚️ compliance gauge). Your characters stay. Undo available.">🗑️</button>
+      <button id="dynamicsUndoBtn" hidden onclick="event.stopPropagation(); window.undoClearAllDynamics && window.undoClearAllDynamics();" style="font-size:70%; padding:2px 6px;" data-tooltip="Undo the last dynamics clear">↶</button>
+      <span style="font-size:0.65rem; opacity:0.55;" data-tooltip="How each character privately regards the others — directed (A→B can differ from B→A). Hidden context that colors the writing; never quoted verbatim. Migrated from the old Main-character relation field.">ℹ️</span>
+    </div>
+    <div id="dynamicsContentEl">
+      <!-- Auto-extension (user 2026-07-02) : hauteur = contenu, pas de plafond ni de poignée — le panneau suit
+           la taille de ses cellules (y compris quand on en agrandit une à la main). -->
+      <div id="dynamicsPerCharContainer">
+        <div style="padding:8px; font-size:0.7rem; opacity:0.6;">(Add at least two named characters to define dynamics.)</div>
+      </div>
+      <!-- Free-text dynamics (2026-08-02, user) : notes on ANY character (present or not, even a walk-on NPC
+           without a sheet) that don't fit the structured per-pair matrix above. Sent as-is when non-empty,
+           gated only by the panel's master 🚫 toggle — no scene-cast filtering, no ledger dedup. -->
+      <div style="border-top:2px solid var(--box-border-color,#888);">
+        <div style="display:flex; gap:0.4rem; padding:3px 8px; align-items:center; background:rgba(128,128,128,0.07);">
+          <span style="font-size:0.65rem; opacity:0.6;" data-tooltip="Free-text notes on how ANY character regards another — including characters without a sheet (a walk-on NPC) or offstage ones. Sent as-is, without the scene/cast filtering the matrix above applies.">🗒️ Other dynamics (free text — any character, in scene or not)</span>
+        </div>
+        <textarea id="dynamicsOthersEl" oninput="window.saveDynamicsOthersText && window.saveDynamicsOthersText(this.value);" style="display:block; width:100%; font-size:0.75rem; min-height:2.5rem; resize:vertical; border:none; background:transparent; padding:5px 8px; box-sizing:border-box; color:inherit;" placeholder="e.g. Merchant: hostile toward Adela (hates Elves). Admires Raven's neckline."></textarea>
+      </div>
+    </div>
+  </div>
