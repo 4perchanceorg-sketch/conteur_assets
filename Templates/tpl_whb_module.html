@@ -25,6 +25,8 @@
           </label>
           <span style="opacity:0.7;" data-wh-i18n="trigMax">max</span>
           <input id="worldHandbookTriggerCap" type="number" min="0" step="1" style="width:3rem; font-size:0.7rem; padding:1px 3px;" data-wh-i18n-tip="trigCapTip" oninput="window._whSetTriggerCap && window._whSetTriggerCap(this.value)">
+          <span style="opacity:0.7;" data-wh-i18n="budgetLbl">⚖️ tok</span>
+          <input id="worldHandbookTokenBudget" type="number" min="0" step="50" style="width:3.8rem; font-size:0.7rem; padding:1px 3px;" data-wh-i18n-tip="budgetTip" oninput="window._whSetTokenBudget && window._whSetTokenBudget(this.value)">
         </div>
         <div id="worldHandbookImportRow" style="display:flex; gap:4px; margin-bottom:0.35rem;">
           <input id="worldHandbookUrlInput" type="url" data-wh-i18n-ph="urlPh" placeholder="Import from a URL (wiki, fandom…)" style="flex:1; min-width:0; font-size:78%; padding:2px 5px;" onkeydown="if(event.key==='Enter'){event.preventDefault(); window._whImportFromUrl && window._whImportFromUrl();}">
