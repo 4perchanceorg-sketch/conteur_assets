@@ -36,6 +36,14 @@
           <input id="worldHandbookPromptInput" type="text" data-wh-i18n-ph="promptPh" placeholder="Generate from a prompt (a place, a legend, a faction…)" style="flex:1; min-width:0; font-size:78%; padding:2px 5px;" onkeydown="if(event.key==='Enter'){event.preventDefault(); window._whImportFromPrompt && window._whImportFromPrompt();}">
           <button id="worldHandbookPromptBtn" onclick="window._whImportFromPrompt && window._whImportFromPrompt()" style="font-size:75%; flex-shrink:0;" data-wh-i18n="promptBtn" data-wh-i18n-tip="promptTip">🪄 From prompt</button>
         </div>
+        <div id="worldHandbookPromptExtRow" style="display:flex; align-items:center; gap:4px; margin-bottom:0.35rem; font-size:0.7rem;">
+          <label style="display:flex; align-items:center; gap:3px; cursor:pointer;" data-wh-i18n-tip="promptExtTip">
+            <input id="worldHandbookPromptExtChk" type="checkbox" style="margin:0;" onchange="document.getElementById('worldHandbookPromptExtCount').disabled = !this.checked;">
+            <span data-wh-i18n="promptExtLbl">🔁 Extended (multiple passes)</span>
+          </label>
+          <input id="worldHandbookPromptExtCount" type="number" min="2" max="4" step="1" value="3" disabled style="width:2.6rem; font-size:0.7rem; padding:1px 3px;" data-wh-i18n-tip="promptExtCountTip">
+          <span style="opacity:0.7;" data-wh-i18n="promptExtPasses">passes</span>
+        </div>
         <div id="worldHandbookSourceRow" style="display:flex; gap:4px; margin-bottom:0.35rem;">
           <button id="worldHandbookBibleBtn" onclick="window._whImportFromSource && window._whImportFromSource('bible')" style="font-size:75%; flex:1;" data-wh-i18n="bibleBtn" data-wh-i18n-tip="bibleTip">📥 Bible</button>
           <button id="worldHandbookPyramidBtn" onclick="window._whImportFromSource && window._whImportFromSource('pyramid')" style="font-size:75%; flex:1;" data-wh-i18n="pyramidBtn" data-wh-i18n-tip="pyramidTip">📥 Memory</button>
