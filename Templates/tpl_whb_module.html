@@ -1,7 +1,7 @@
       <button id="worldHandbookToggleBtn"
         onclick="var ctn=document.getElementById('worldHandbookCtn'); var open=ctn.style.display!=='none'; ctn.style.display=open?'none':'block'; localStorage.worldHandbookPanelOpen=open?'':'1'; if(window._whApplyLabels) window._whApplyLabels(); if(!open && window.renderWorldHandbook) window.renderWorldHandbook();"
         style="font-size:80%; width:100%; display:flex; align-items:center; justify-content:space-between; gap:6px; text-align:left; padding:4px 8px; background:var(--box-color); border:1px solid var(--box-border-color,#888); border-radius:3px; cursor:pointer;"
-        data-wh-i18n-tip="toggleTip" data-tooltip="Centralise your world's lore, artifacts, races and organisations — selected entries are sent to the AI"><span id="worldHandbookToggleLabel">🌍 World Handbook ▶</span><span id="worldHandbookToggleTokens" style="opacity:0.65; font-weight:normal; flex-shrink:0;"></span></button>
+        data-wh-i18n-tip="toggleTip" data-tooltip="Centralise your world's lore, artifacts, races and organisations — selected entries are sent to the AI"><span id="worldHandbookToggleLabel">▶ 🌍 World Handbook</span><span id="worldHandbookToggleTokens" style="font-size:0.65rem; opacity:0.55; font-weight:normal; flex-shrink:0;"></span></button>
       <div id="worldHandbookCtn" style="display:none; padding:8px; border:1px solid var(--box-border-color,#888); border-top:none; border-radius:0 0 3px 3px; background:var(--box-color);">
         <div id="worldHandbookOffRow" style="display:flex; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:0.4rem; font-size:0.7rem;">
           <label style="display:flex; align-items:center; gap:4px; cursor:pointer; opacity:0.85;" data-wh-i18n-tip="offTip">
